@@ -1,4 +1,6 @@
 import React from "react";
+import { Banner } from "./components/Banner";
+import { Nav } from "./components/Nav";
 import { Row } from "./components/Row";
 import { requests } from "./api/request";
 import "./App.css";
@@ -6,6 +8,8 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
+      <Nav />
+      <Banner />
       <Row
         title="NETFLIX ORIGUINALS"
         fetchUrl={requests.feachNetflixOriginals}
